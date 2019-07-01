@@ -1,0 +1,42 @@
+body {
+    margin: 1%;
+    padding: 0;
+}
+.checkers-board {
+    height: 95vh;
+    width: 95vh;
+    background-blend-mode: difference;
+    background-image:
+      linear-gradient(to bottom, #000 50%, #fff 50%),
+      linear-gradient(to right, #000 50%, #fff 50%);
+    background-size: 25% 25%;
+    outline: 1px solid rgb(0, 0, 0);
+    position: relative;
+    overflow-x: hidden;
+  }
+  .checker {
+    height: 11%;
+    width: 11%;
+    border-radius: 50%;
+    border: 1px solid black;
+    display: inline-block;
+    box-sizing: border-box;
+  }
+  .white-checker {
+    background-color: #fff;
+  }
+  .black-checker {
+    background-color: blue;
+  }
+  .chosen-checker{
+      border: 3px solid red;
+  }
+  .temp-checker {
+      background-color: grey;
+  }
+@media (orientation: portrait) {
+    .checkers-board {
+      height: 95vw;
+      width: 95vw;
+    }
+  }
